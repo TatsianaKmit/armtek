@@ -1,0 +1,48 @@
+@use './variables';
+
+@mixin titleFont {
+    color: variables.$fontColor;
+    font-weight: variables.$fontWeight;
+    font-size: variables.$fontSize;
+    line-height: variables.$fontLineHeight;
+    text-transform: uppercase;
+}
+
+@mixin blocksText {
+    color: variables.$textBlocksColor;
+    font-weight: variables.$textBlocksWeight;
+    font-size: variables.$textBlocksSize;
+    line-height: variables.$textBlocksLineHeight;
+}
+
+@mixin blocksTextBold {
+    color: variables.$textBlocksColor;
+    font-weight: variables.$textBlocksWeightBold;
+    font-size: variables.$textBlocksSize;
+    line-height: variables.$textBlocksLineHeight;
+}
+
+@mixin orangeButton {
+    background-color: variables.$fontColor;
+    width: variables.$buttonWidth;
+    height: variables.$buttonHeight;
+    border-radius: variables.$buttonBorderRadius;
+    color: white;
+    font-weight: variables.$buttonTextWeight;
+    font-size: variables.$buttonTextSize;
+    line-height: variables.$buttonTextLineHeight;
+    text-transform: uppercase;
+}
+
+@mixin whiteButton {
+    background-color: white;
+    width: variables.$buttonWidth;
+    height: variables.$buttonHeight;
+    border-radius: variables.$buttonBorderRadius;
+    border: 1px solid variables.$fontColor;
+    color: variables.$fontColor;
+    font-weight: variables.$buttonTextWeight;
+    font-size: variables.$buttonTextSize;
+    line-height: variables.$buttonTextLineHeight;
+    text-transform: uppercase;
+}
