@@ -22,7 +22,26 @@
     line-height: variables.$textBlocksLineHeight;
 }
 
+@mixin littleTextFont {
+    font-family: variables.$littleTextFont;
+    color: variables.$littleTextColor;
+    font-weight: variables.$littleTextWeight;
+    font-size: variables.$littleTextSize;
+    line-height: variables.$littleTextHeight;
+}
+
+@mixin littleTextFontBold {
+    font-family: variables.$littleTextFont;
+    color: variables.$littleTextColor;
+    font-weight: 700;
+    font-size: variables.$littleTextSize;
+    line-height: variables.$littleTextHeight;
+}
+
 @mixin orangeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: variables.$fontColor;
     width: variables.$buttonWidth;
     height: variables.$buttonHeight;
@@ -32,9 +51,13 @@
     font-size: variables.$buttonTextSize;
     line-height: variables.$buttonTextLineHeight;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 @mixin whiteButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     width: variables.$buttonWidth;
     height: variables.$buttonHeight;
@@ -45,4 +68,5 @@
     font-size: variables.$buttonTextSize;
     line-height: variables.$buttonTextLineHeight;
     text-transform: uppercase;
+    cursor: pointer;
 }
