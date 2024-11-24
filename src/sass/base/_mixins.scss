@@ -1,5 +1,13 @@
 @use './variables';
 
+@mixin salesFont {
+    color: variables.$salesTextColor;
+    font-family: variables.$salesTextFontFamily;
+    font-weight: variables.$salesTextFontWeight;
+    font-size: variables.$salesTextFontSize;
+    line-height: variables.$salesTextFontHeight;
+}
+
 @mixin titleFont {
     color: variables.$fontColor;
     font-weight: variables.$fontWeight;
@@ -37,6 +45,13 @@
     font-size: variables.$littleTextSize;
     line-height: variables.$littleTextHeight;
 }
+
+// @mixin textButton {
+//     width: 92px;
+//     height: 23px;
+//     border-radius: 56px;
+//     background-color: white;
+// }
 
 @mixin orangeButton {
     display: flex;
