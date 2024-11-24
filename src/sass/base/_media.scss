@@ -10,6 +10,8 @@
     }
 
     .description {
+        margin: 24px 0 24px;
+
         &__wrapper {
             grid-template-columns: 7fr 4fr;
         }
@@ -45,6 +47,12 @@
             max-width: 960px;
         }
     }
+
+    .description {
+        height: unset;
+        margin: 24px 0;
+    }
+
 
     .get {
         height: 320px;
@@ -100,12 +108,143 @@
             max-width: 720px;
         }
     }
+
+    .get {
+        height: auto;
+
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        &__photo {
+            display: none;
+        }
+    }
+
+    .requirements {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+
+        &__photo {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         &-wide {
             max-width: 540px;
+        }
+    }
+
+    .description {
+        margin: 12px 0;
+    }
+
+    .get {
+        height: 400px;
+
+        &__text {
+            h1 {
+                line-height: 32px;
+            }
+        }
+
+        &__buttons {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            row-gap: 10px;
+        }
+
+        &__button {
+            &:first-child {
+                width: 460px;
+                height: 60px;
+            }
+
+            &:last-child {
+                width: 460px;
+                height: 60px;
+            }
+        }
+    }
+
+    .conditions {
+        &__text {
+            h1 {
+                line-height: 32px;
+            }
+        }
+    }
+
+    .requirements {
+        height: auto;
+
+        &__text {
+            h1 {
+                margin: 10px 0 10px 10px;
+            }
+        }
+
+        &__list {
+            margin-left: 10px;
+
+            >li {
+                margin-bottom: 4px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .choose {
+        height: auto;
+        border-bottom: unset;
+
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        &__title {
+            grid-column: unset;
+        }
+
+        &__title {
+            h1 {
+                line-height: 32px;
+            }
+        }
+
+        &__button {
+            margin-top: 10px;
+            justify-self: center;
+            width: 460px;
+            height: 60px;
+        }
+    }
+
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            row-gap: 24px;
+        }
+
+        &__button {
+            &:first-child {
+                justify-self: unset;
+                margin-right: unset;
+            }
+
+            &:last-child {
+                justify-self: unset;
+                margin-left: unset;
+                width: 460px;
+                height: 60px;
+            }
         }
     }
 }
@@ -115,5 +254,81 @@
         &-wide {
             max-width: 100%;
         }
+    }
+
+    .get {
+        &__wrapper {
+            padding: 0 10px;
+        }
+
+        &__text {
+            >p {
+                line-height: 20px;
+            }
+
+            >span {
+                line-height: 20px;
+            }
+        }
+
+        &__button {
+            &:first-child {
+                width: 300px;
+            }
+
+            &:last-child {
+                width: 300px;
+            }
+        }
+    }
+
+    .conditions {
+        &__wrapper {
+            padding: 0 10px;
+        }
+
+        &__list {
+            >li {
+                background-size: 20px 20px;
+                padding-left: 25px;
+                line-height: 1.1;
+            }
+
+            >li>span {
+                line-height: 1.1;
+            }
+        }
+    }
+
+    .choose {
+        padding: 0 10px;
+
+        &__text {
+            >p {
+                line-height: 20px;
+            }
+        }
+
+        &__button {
+            width: 300px;
+        }
+    }
+
+    .contacts {
+        &__button {
+            &:last-child {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 393px) {
+    .get {
+        height: 430px;
+    }
+
+    .conditions {
+        height: auto;
     }
 }

@@ -12,8 +12,6 @@
 
 .description {
     height: 340px;
-    // border-radius: 16px;
-    // background-color: #FAC28F;
     margin: 24px 0 53px;
 
     &__all {
@@ -22,101 +20,6 @@
         }
     }
 
-    // >p {
-    //     @include mixins.blocksText()
-    // }
-
-    // &__wrapper {
-    //     display: grid;
-    //     grid-template-columns: 1fr 421px;
-    //     grid-template-rows: 120px 1fr;
-    // }
-
-    // &__title {
-    //     text-align: center;
-    //     >h1 {
-    //         margin-top: 34px;
-    //         background: url("../img/title.png") 50% / cover no-repeat;
-    //         color: white;
-    //         font-family: 'Montserrat', sans-serif;
-    //         font-weight: 900;
-    //         font-size: 48px;
-    //         line-height: 58.51px;
-    //         text-transform: uppercase;
-    //     }
-    // }
-
-    // &__text {
-    //     display: grid;
-    //     grid-template-columns: 312px 320px;
-    //     column-gap: 29px;
-    //     margin-left: 51px;
-    //     grid-column: 1 / 2;
-    //     grid-row: 2 / 3;
-    // }
-
-    // &__sale {
-    //     @include mixins.salesFont();
-    // }
-
-    // &__percentage {
-    //     @include mixins.salesFont();
-    //     font-size: 66px;
-    //     line-height: 80.45px;
-    // }
-
-    // &__filters {
-    //     @include mixins.salesFont();
-    //     font-weight: 700;
-    //     font-size: 12px;
-    //     line-height: 14.63px;
-    //     text-transform: uppercase;
-    //     margin-bottom: 9px;
-    // }
-
-    // &__purchase {
-    //     @include mixins.salesFont();
-    //     color: #FF7810;
-    //     font-weight: 800;
-    //     font-size: 16px;
-    //     line-height: 19.5px;
-    //     text-transform: uppercase;
-
-    //     &-10 {
-    //         position: relative;
-    //     }
-    // }
-
-    // &__any {
-    //     height: 22px;
-    //     width: 92px;
-    //     position: absolute;
-    //     right: 90px;
-    //     top: 0;
-    // }
-
-    // &__sales {
-    //     position: relative;
-    //     display: flex;
-    //     align-items: baseline;
-    // }
-
-    // &__picture {
-    //     position: absolute;
-    //     right: 0;
-    //     top: -10px;
-    // }
-
-    // &__photo {
-    //     width: 100%;
-    //     grid-column: 2 / 3;
-    //     grid-row: 2 / 3;
-
-    //     img {
-    //         height: 100%;
-    //         object-fit: cover;
-    //     }
-    // }
 }
 
 .get {
