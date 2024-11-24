@@ -9,7 +9,7 @@ const htmlmin = require("gulp-htmlmin");
 gulp.task("server", function () {
     browserSync({
         server: {
-            baseDir: "dist", //// dist
+            baseDir: "dist",
         },
     });
 
