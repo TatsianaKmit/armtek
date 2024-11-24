@@ -2,14 +2,18 @@
   "name": "armtekpage",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://TatsianaKmit.github.io/armtek",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "gulp build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "browser-sync": "^3.0.3",
+    "gh-pages": "^6.2.0",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",

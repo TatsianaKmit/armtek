@@ -76,6 +76,8 @@ gulp.task("images", function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task("build", gulp.parallel("styles", "html", "scripts", "fonts", "icons", "images"));
+
 gulp.task(
     "default",
     gulp.parallel(
